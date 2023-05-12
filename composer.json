@@ -1,0 +1,26 @@
+{
+  "name": "areaweb/laravel-package",
+  "description": "Example Laravel package for AreaWeb",
+  "autoload": {
+    "psr-4": {
+      "AreaWeb\\LaravelPackage\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "AreaWeb\\LaravelPackage\\Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Mikhail Protasevich",
+      "email": "hello@areaweb.su"
+    }
+  ],
+  "require": {
+    "php": "^8.2"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^8.5"
+  }
+}

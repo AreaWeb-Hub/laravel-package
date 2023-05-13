@@ -25,5 +25,6 @@ class LaravelPackageServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->loadRoutesFrom(__DIR__ . '/../../routes/laravel-package-web.php');
+        $this->loadMigrationsFrom(__DIR__ . '/../../database/migrations');
     }
 }

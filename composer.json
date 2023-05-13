@@ -1,5 +1,6 @@
 {
   "name": "areaweb/laravel-package",
+  "version": "1.0.0",
   "description": "Example Laravel package for AreaWeb",
   "autoload": {
     "psr-4": {
@@ -26,7 +27,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Illuminate\\Support\\ServiceProvider\\LaravelPackageServiceProvider"
+        "AreaWeb\\LaravelPackage\\Providers\\LaravelPackageServiceProvider"
       ]
     }
   }

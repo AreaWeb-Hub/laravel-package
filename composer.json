@@ -22,5 +22,12 @@
   },
   "require-dev": {
     "orchestra/testbench": "^8.5"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Illuminate\\Support\\ServiceProvider\\LaravelPackageServiceProvider"
+      ]
+    }
   }
 }

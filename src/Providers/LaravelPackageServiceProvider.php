@@ -13,6 +13,10 @@ class LaravelPackageServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->app->bind(TestService::class, TestService::class);
+
+        $this->mergeConfigFrom(
+            __DIR__ . '/../../config/laravel-package.php', 'laravel-package'
+        );
     }
 
     /**

@@ -26,5 +26,9 @@ class LaravelPackageServiceProvider extends ServiceProvider
     {
         $this->loadRoutesFrom(__DIR__ . '/../../routes/laravel-package-web.php');
         $this->loadMigrationsFrom(__DIR__ . '/../../database/migrations');
+        $this->loadViewsFrom(__DIR__ . '/../../resources/views', 'laravel-package');
+        $this->publishes([
+            __DIR__ . '/../../resources/views' => resource_path('views/laravel-package'),
+        ], 'laravel-package');
     }
 }

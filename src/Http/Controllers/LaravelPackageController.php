@@ -8,6 +8,8 @@ class LaravelPackageController extends Controller
 {
     public function home(): string
     {
-        return 'Hello, Laravel Package!';
+        return view('laravel-package::home', [
+            'text' => 'Hello, Laravel Package!'
+        ]);
     }
 }

@@ -12,11 +12,6 @@ class TestService
         return fake()->text;
     }
 
-    public function getAnotherRandomString(): string
-    {
-        return Str::random(100);
-    }
-
     public function hashString(string $string): string
     {
         return Hash::make($string);

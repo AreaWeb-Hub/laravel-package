@@ -21,4 +21,14 @@ class TestService
     {
         return $a + $b;
     }
+
+    public function getUrl()
+    {
+        return config('laravel-package.url');
+    }
+
+    public function getSecret()
+    {
+        return config('laravel-package.secret');
+    }
 }
